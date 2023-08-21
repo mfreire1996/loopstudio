@@ -173,6 +173,23 @@ li:nth-child(1),
   margin-bottom: 1.5rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .vr img, .vr .box {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+    margin-left: 5rem;
+  }
+  .vr .box {
+    position: relative;
+    margin-left: 7.5rem;
+    margin-top: 4rem;
+    padding: 2rem;
+    text-align: center;
+    width: 65%;
+  }
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -206,6 +223,19 @@ li:nth-child(1),
   word-wrap: break-word;
 }
 
+@media screen and (max-width: 1200px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-item {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .see-all {
   background-color: #000;
   color: #fff;
@@ -216,6 +246,27 @@ li:nth-child(1),
   margin-left: auto;
 }
 
+.see-all-2 {
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
+  width: 9rem;
+  padding: 1rem;
+  z-index: 1;
+  letter-spacing: 2px;
+  margin-left: auto;
+  display: none;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .see-all-2 {
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .footer {
   color: #fff;
   background-color: #000;
@@ -298,4 +349,45 @@ li:nth-child(1),
 .footer-section h3 {
   position: relative;
   margin-left: 55rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer h1 {
+    text-align: center;
+    margin-left: auto;
+  }
+  .footer .footer-i {
+    margin-top: 20rem;
+  }
+  .footer-section {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-section .nav {
+    top: 15%;
+    left: 29rem;
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 3;
+  }
+  .footer-section .nav li:nth-child(1) {
+    margin-left: 5px;
+  }
+  .footer-section #copyright {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav {
+    left: 5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
